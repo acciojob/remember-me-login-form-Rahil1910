@@ -19,11 +19,11 @@ const submit = document.getElementById('submit');
             const user = document.getElementById('username').value;
             const pass = document.getElementById('password').value;
             const data = localStorage.getItem("username");
-            if(data){
-                const existing = document.createElement('button');
-                existing.id="existing";
-                existing.textContent = "Login as existing user";
-                existing.addEventListener('click',()=>{
+            const data1 = localStorage.getItem("password");
+            if(data && data1){
+                const exist = document.querySelector("#existing");
+				exist.classList.toggle("show");
+                exist.addEventListener('click',()=>{
                     alert(`Login as existing user`);
                 })
                 const form = document.getElementById('form');

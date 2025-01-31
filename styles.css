@@ -1,1 +1,7 @@
 /*  your css code here. If applicable */
+#existing{
+	display:none;
+}
+#existing.show{
+	display:block;
+}

@@ -10,12 +10,13 @@
 	<h1>Login Form</h1>
 	<form id="form">
 		<label for="username">Username:</label><br>
-		<input oninput="input()" type="text" placeholder="Username" id="username"><br>
+		<input onchange="input()" type="text" placeholder="Username" id="username"><br>
 		<label for="password">Password:</label><br>
-		<input oninput="input()" type="password" id="password" placeholder="Password"><br>
+		<input onchange="input()" type="password" id="password" placeholder="Password"><br>
 		<label for="checkbox">Remember me:</label>
 		<input id="checkbox" type="checkbox"><br>
 		<input type="submit" id="submit" value="Submit"> 
+		<button type="submit" id="existing">Login as existing user</button>
 	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
