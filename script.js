@@ -24,7 +24,7 @@ const submit = document.getElementById('submit');
                 existing.id="exist";
                 existing.textContent = "Login as existing user";
                 existing.addEventListener('click',()=>{
-                    alert(`Logged in as ${user}`);
+                    alert(`Login as existing user`);
                 })
                 const form = document.getElementById('form');
                 form.appendChild(existing);
