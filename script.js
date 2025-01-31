@@ -12,7 +12,7 @@ const submit = document.getElementById('submit');
             if(!check.checked){
                 localStorage.removeItem("username");
                 localStorage.removeItem("password");
-                alert("data is removed");
+                alert("Logged in as username");
             }
         })
         function input(){
