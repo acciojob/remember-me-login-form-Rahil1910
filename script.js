@@ -21,7 +21,7 @@ const submit = document.getElementById('submit');
             const data = localStorage.getItem("username");
             if(data){
                 const existing = document.createElement('button');
-                existing.id="exist";
+                existing.id="existing";
                 existing.textContent = "Login as existing user";
                 existing.addEventListener('click',()=>{
                     alert(`Login as existing user`);
